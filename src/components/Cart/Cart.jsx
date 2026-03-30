@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Banner = () => {
+const Cart = () => {
   return (
     <div>
-      I am banner
+      I am cart page
     </div>
   );
 };
 
-export default Banner;
+export default Cart;
