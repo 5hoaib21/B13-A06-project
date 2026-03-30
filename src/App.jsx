@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Cart from "./components/Cart/Cart";
@@ -14,7 +15,10 @@ const modelPromise = getModels();
 
 function App() {
 
-  
+  const [switchTab, setSwitchTab] = useState("products");
+const [carts, setCarts] = useState([])
+
+
 
   return (
     <>
@@ -28,6 +32,7 @@ function App() {
           name="my_tabs_1"
           className="tab rounded-full"
           aria-label="Products"
+          onClick={()=> setSwitchTab('products')}
           defaultChecked
         />
         <input
@@ -35,13 +40,14 @@ function App() {
           name="my_tabs_1"
           className="tab rounded-full"
           aria-label="Cart "
-          
+          onClick={()=> setSwitchTab('cart')}
         />
       </div>
 
-      <Models modelPromise={modelPromise} />
-      <Cart />
-
+      {switchTab === 'products' && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts} />}
+      {switchTab === 'cart' && <Cart  carts={carts} 
+      setCarts={setCarts}
+      />}
       <Footer />
     </>
   );

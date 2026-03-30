@@ -2,13 +2,15 @@ import React from 'react';
 import { useState } from 'react';
 import { TiTick } from "react-icons/ti";
 
-const ModelCard = ({model}) => {
+const ModelCard = ({model, carts, setCarts}) => {
   const [isBought,  setIsBought] = useState(false)
 
 
   const handleBuyNow = () => {
     setIsBought(true);
+    setCarts([  ...carts, model])
   }
+
 
   return (
      <div
@@ -19,7 +21,7 @@ const ModelCard = ({model}) => {
               {/* img and badge div */}
               <div className="flex justify-between relative">
                 <img
-                  className="h-10 w-10 p-2 m-2 bg-gray-100"
+                  className="h-10 w-10 p-2 m-2 object-contain bg-gray-100"
                   src={model.image}
                   alt=""
                 />
@@ -61,7 +63,8 @@ const ModelCard = ({model}) => {
                   {model.featuresFour}
                 </p>
               </div>
-              <button onClick={()=> setIsBought(true)} className="btn btn-primary w-full rounded-2xl">
+              <button onClick={()=> handleBuyNow()} className={`
+              btn ${isBought ? "btn-active btn-success" : "btn-primary"} w-full rounded-2xl`}>
                 {isBought ? "Added to Cart" : "Buy Now"}
               </button>
             </div>
