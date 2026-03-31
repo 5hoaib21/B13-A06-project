@@ -5,6 +5,7 @@ import Cart from "./components/Cart/Cart";
 import Footer from "./components/Footer/Footer";
 import Models from "./components/Models/Models";
 import Navbar from "./components/Navbar/Navbar";
+import GetStarted from "./components/GetStarted/GetStarted";
 
 const getModels = async () => {
   const res = await fetch("/data.json");
@@ -48,6 +49,7 @@ const [carts, setCarts] = useState([])
       {switchTab === 'cart' && <Cart  carts={carts} 
       setCarts={setCarts}
       />}
+      <GetStarted />
       <Footer />
     </>
   );
