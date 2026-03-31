@@ -22,7 +22,7 @@ const [carts, setCarts] = useState([])
 
   return (
     <>
-      <Navbar />
+      <Navbar carts={carts} />
       <Banner />
 
       {/* name of each tab group should be unique */}
@@ -39,7 +39,7 @@ const [carts, setCarts] = useState([])
           type="radio"
           name="my_tabs_1"
           className="tab rounded-full"
-          aria-label="Cart "
+          aria-label={`Cart (${carts.length})`}
           onClick={()=> setSwitchTab('cart')}
         />
       </div>

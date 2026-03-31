@@ -1,15 +1,19 @@
 import React from "react";
 import { PiTrolleyFill } from "react-icons/pi";
+import { toast } from "react-toastify";
 
 const Cart = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
 
   const handleProceedToCheckout = () => {
     setCarts([]);
+    toast.success("Thank you for your purchase! Your order has been placed successfully.");
   };
     const handleRemoveFromCart = (cart) => {
-   carts.filter((item) => item.id !== cart.id);
-   setCarts(carts.filter((item) => item.id !== cart.id))
+   const filteredCarts = carts.filter((item) => item.id !== cart.id);
+  //  console.log(filteredCarts);
+   setCarts(filteredCarts);
+   toast.error(`${cart.name} removed from cart!`, )
   }
 
   return (

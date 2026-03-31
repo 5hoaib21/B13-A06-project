@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { TiTick } from "react-icons/ti";
+import { toast } from 'react-toastify';
 
 const ModelCard = ({model, carts, setCarts}) => {
   const [isBought,  setIsBought] = useState(false)
@@ -9,8 +10,8 @@ const ModelCard = ({model, carts, setCarts}) => {
   const handleBuyNow = () => {
     setIsBought(true);
     setCarts([  ...carts, model])
-  }
-
+    toast.success(`${model.name} added to cart!`);
+  };
 
   return (
      <div
