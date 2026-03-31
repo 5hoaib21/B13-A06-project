@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Models from "./components/Models/Models";
 import Navbar from "./components/Navbar/Navbar";
 import GetStarted from "./components/GetStarted/GetStarted";
+import PricingSect from "./components/PricingSect/PricingSect";
 
 const getModels = async () => {
   const res = await fetch("/data.json");
@@ -50,6 +51,7 @@ const [carts, setCarts] = useState([])
       setCarts={setCarts}
       />}
       <GetStarted />
+      <PricingSect />
       <Footer />
     </>
   );
