@@ -14,8 +14,8 @@ const PricingSect = () => {
       </div>
       <div className="">
         {/* pricing cards */}
-        <div className="gap-5 hover:  grid md:grid-cols-2 lg:grid-cols-3">
-          <div className="card  bg-base-100 shadow-sm">
+        <div className="gap-5  grid md:grid-cols-2 lg:grid-cols-3">
+          <div className="card  bg-base-100 shadow-lg">
             <div className="card-body">
               
              <div className="space-y-2">
@@ -95,11 +95,11 @@ const PricingSect = () => {
              
               </ul>
               <div className="mt-6">
-                <button className="btn btn-primary btn-block">Get Started Free</button>
+                <button className="btn btn-primary btn-block rounded-full">Get Started Free</button>
               </div>
             </div>
           </div>
-          <div className="card  bg-[#4F39F6]  text-white shadow-sm">
+          <div className="card  bg-[#4F39F6]  text-white shadow-lg">
             <div className="card-body relative">
               <span className="absolute -top-1.5 right-32 badge badge-xs badge-warning bg-[#FEF3C6] text-[#1F2937]">Most Popular</span>
               <div className="space-y-2">
@@ -217,7 +217,7 @@ const PricingSect = () => {
               </div>
             </div>
           </div>
-          <div className="card  bg-base-100 shadow-sm">
+          <div className="card  bg-base-100 shadow-lg">
             <div className="card-body">
               
               <div className="space-y-2">

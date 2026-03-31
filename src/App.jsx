@@ -7,6 +7,7 @@ import Models from "./components/Models/Models";
 import Navbar from "./components/Navbar/Navbar";
 import GetStarted from "./components/GetStarted/GetStarted";
 import PricingSect from "./components/PricingSect/PricingSect";
+import ReadyToTransform from "./components/ReadyToTransform/ReadyToTransform";
 
 const getModels = async () => {
   const res = await fetch("/data.json");
@@ -52,6 +53,7 @@ const [carts, setCarts] = useState([])
       />}
       <GetStarted />
       <PricingSect />
+      <ReadyToTransform />
       <Footer />
     </>
   );
