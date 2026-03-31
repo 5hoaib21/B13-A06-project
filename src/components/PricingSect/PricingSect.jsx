@@ -15,7 +15,7 @@ const PricingSect = () => {
       <div className="">
         {/* pricing cards */}
         <div className="gap-5  grid md:grid-cols-2 lg:grid-cols-3">
-          <div className="card  bg-base-100 shadow-lg">
+          <div className=" card  bg-base-100 shadow-lg">
             <div className="card-body">
               
              <div className="space-y-2">
@@ -23,7 +23,7 @@ const PricingSect = () => {
                 <p>Best for professionals</p>
                 <p ><span className="text-2xl font-bold">$0</span>/month</p>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <ul className="mt-6 flex flex-col flex-1 gap-2 text-xs">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ const PricingSect = () => {
                 <p>Best for professionals</p>
                 <p ><span className="text-2xl font-bold">$29</span>/month</p>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <ul className="mt-6 flex flex-col flex-1 gap-2 text-xs">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +225,7 @@ const PricingSect = () => {
                 <p>For teams and businesses</p>
                 <p ><span className="text-2xl font-bold">$99</span>/month</p>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <ul className="mt-6 flex flex-col flex-1 gap-2 text-xs">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

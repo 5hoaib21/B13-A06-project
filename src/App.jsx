@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import GetStarted from "./components/GetStarted/GetStarted";
 import PricingSect from "./components/PricingSect/PricingSect";
 import ReadyToTransform from "./components/ReadyToTransform/ReadyToTransform";
+import RatingSect from "./components/RatingSect/RatingSect";
 
 const getModels = async () => {
   const res = await fetch("/data.json");
@@ -27,6 +28,7 @@ const [carts, setCarts] = useState([])
     <>
       <Navbar carts={carts} />
       <Banner />
+      <RatingSect />
 
       {/* name of each tab group should be unique */}
       <div className="tabs tabs-box justify-center bg-transparent">

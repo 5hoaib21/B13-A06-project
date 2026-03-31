@@ -75,8 +75,8 @@ const Navbar = ({carts}) => {
           <span className="bg-blue-500 text-white font-semibold badge badge-sm indicator-item">{carts.length}</span>
         </div>
       </div>
-        <a className="btn btn-outline border-none  mr-2.5">Login</a>
-        <a className="btn btn-primary rounded-full">Get Started</a>
+        <a className="btn btn-outline border-none  mr-2.5 ">Login</a>
+        <a className="btn btn-primary rounded-full sm:hidden">Get Started</a>
       </div>
     </div>
   );
