@@ -33,7 +33,7 @@ const [carts, setCarts] = useState([])
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full"
+          className="tab rounded-full checked:bg-blue-500 checked:text-white checked:font-semibold"
           aria-label="Products"
           onClick={()=> setSwitchTab('products')}
           defaultChecked
@@ -41,7 +41,7 @@ const [carts, setCarts] = useState([])
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full"
+          className="tab rounded-full checked:bg-blue-500 checked:text-white checked:font-semibold"
           aria-label={`Cart (${carts.length})`}
           onClick={()=> setSwitchTab('cart')}
         />
