@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({carts}) => {
   return (
-    <div className="navbar bg-base-200 shadow-sm px-30 py-3.5">
+    <div className="navbar bg-base-200 shadow-sm px-25 py-3.5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,7 +49,7 @@ const Navbar = ({carts}) => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 font-semibold text-lg">
+        <ul className="menu menu-horizontal px-1 font-semibold text-lg gap-1">
           <li>
             <a>Products</a>
           </li>
@@ -75,8 +75,8 @@ const Navbar = ({carts}) => {
           <span className="bg-blue-500 text-white font-semibold badge badge-sm indicator-item">{carts.length}</span>
         </div>
       </div>
-        <a className="btn mr-2.5">Login</a>
-        <a className="btn">Get Started</a>
+        <a className="btn btn-outline border-none  mr-2.5">Login</a>
+        <a className="btn btn-primary rounded-full">Get Started</a>
       </div>
     </div>
   );

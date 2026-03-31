@@ -8,7 +8,15 @@ const ModelCard = ({model, carts, setCarts}) => {
 
 
   const handleBuyNow = () => {
+
     setIsBought(true);
+
+    const isFound = carts.find(c => c.id === model.id)
+    if(isFound) {
+      toast.error(`${model.name} is already in the cart!`);
+      return;
+    }
+
     setCarts([  ...carts, model])
     toast.success(`${model.name} added to cart!`);
   };
