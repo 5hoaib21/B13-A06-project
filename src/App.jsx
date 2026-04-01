@@ -31,11 +31,11 @@ const [carts, setCarts] = useState([])
       <RatingSect />
 
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-box justify-center bg-transparent">
+      <div className="tabs tabs-box justify-center bg-transparent ">
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full checked:bg-blue-500 checked:text-white checked:font-semibold"
+          className="tab rounded-full checked:bg-blue-700 checked:text-white checked:font-semibold"
           aria-label="Products"
           onClick={()=> setSwitchTab('products')}
           defaultChecked
@@ -43,7 +43,7 @@ const [carts, setCarts] = useState([])
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full checked:bg-blue-500 checked:text-white checked:font-semibold"
+          className="tab rounded-full checked:bg-blue-700 checked:text-white checked:font-semibold"
           aria-label={`Cart (${carts.length})`}
           onClick={()=> setSwitchTab('cart')}
         />
