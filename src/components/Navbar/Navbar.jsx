@@ -79,12 +79,12 @@ const Navbar = ({ carts }) => {
     </div>
 
     {/* <!-- Login (always visible) --> */}
-    <button className="btn btn-outline border-none mr-2.5 btn-sm sm:btn-md">
+    <button className="btn btn-outline border-none mr-2.5 btn-sm sm:btn-md hover:bg-blue-500 hover:text-white hover:font-bold rounded-full">
       <a>Login</a>
     </button>
 
     {/* <!-- Get Started (hide on small) --> */}
-    <button className="btn btn-primary rounded-full hidden sm:inline-flex">
+    <button className="btn btn-primary rounded-full hidden sm:inline-flex hover:shadow-2xl hover:font-bold transition-shadow duration-300">
       <a>Get Started</a>
     </button>
 
