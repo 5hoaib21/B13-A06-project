@@ -72,7 +72,7 @@ const ModelCard = ({model, carts, setCarts}) => {
                   {model.featuresFour}
                 </p>
               </div>
-              <button onClick={()=> handleBuyNow()} className={`
+              <button onClick={()=> handleBuyNow()} className={` 
               btn ${isBought ? "btn-active btn-success" : "btn-primary"} w-full rounded-2xl`}>
                 {isBought ? "Added to Cart" : "Buy Now"}
               </button>
