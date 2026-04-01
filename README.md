@@ -12,7 +12,7 @@ Technologies that i use:
 5. React Icons
 -------------------------------------
 
-3 Features about your project:
+3 Key-Features about my project:
 
 1. See your order total update in realTime as you add or ramove items.
 2. Receive instant toast notifications whenever you preform actions in your cart.
