@@ -54,7 +54,7 @@ const ModelCard = ({model, carts, setCarts}) => {
                   {model.period}
                 </p>
               </div>
-              <div className="text-gray-500">
+              <div className="text-gray-500 flex-1 space-y-1">
                 <p className="flex items-center gap-1">
                   <TiTick />
                   {model.featuresOne}
@@ -73,7 +73,7 @@ const ModelCard = ({model, carts, setCarts}) => {
                 </p>
               </div>
               <button onClick={()=> handleBuyNow()} className={` 
-              btn ${isBought ? "btn-active btn-success" : "btn-primary"} w-full rounded-2xl`}>
+              btn ${isBought ? "btn-active btn-success" : "btn-primary"} w-full rounded-2xl hover:translate-y-1 transition-transform duration-300`}>
                 {isBought ? "Added to Cart" : "Buy Now"}
               </button>
             </div>
