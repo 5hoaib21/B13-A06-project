@@ -23,7 +23,7 @@ const ModelCard = ({model, carts, setCarts}) => {
 
   return (
      <div
-            className="shadow-xl p-5 rounded-2xl border border-gray-300"
+            className="shadow-lg p-5 rounded-2xl border border-gray-300 hover:shadow-2xl transition-shadow duration-300"
             key={model.id}
           >
             <div className="space-y-3">

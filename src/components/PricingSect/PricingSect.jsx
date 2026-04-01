@@ -15,13 +15,14 @@ const PricingSect = () => {
       <div className="">
         {/* pricing cards */}
         <div className="gap-5  grid md:grid-cols-2 lg:grid-cols-3">
-          <div className=" card  bg-base-100 shadow-lg">
+          <div className=" card  bg-base-00 shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
             <div className="card-body">
-              
-             <div className="space-y-2">
+              <div className="space-y-2">
                 <h2 className="text-3xl font-bold">Pro</h2>
                 <p>Best for professionals</p>
-                <p ><span className="text-2xl font-bold">$0</span>/month</p>
+                <p>
+                  <span className="text-2xl font-bold">$0</span>/month
+                </p>
               </div>
               <ul className="mt-6 flex flex-col flex-1 gap-2 text-xs">
                 <li>
@@ -92,20 +93,25 @@ const PricingSect = () => {
                   </svg>
                   <span>1 project per month</span>
                 </li>
-             
               </ul>
               <div className="mt-6">
-                <button className="btn btn-primary btn-block rounded-full">Get Started Free</button>
+                <button className="btn btn-primary btn-block rounded-full hover:shadow-2xl transition-shadow duration-300">
+                  Get Started Free
+                </button>
               </div>
             </div>
           </div>
-          <div className="card  bg-[#4F39F6]  text-white shadow-lg">
+          <div className="card  bg-[#4F39F6]  text-white shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-200">
             <div className="card-body relative">
-              <span className="absolute -top-1.5 right-32 badge badge-xs badge-warning bg-[#FEF3C6] text-[#1F2937]">Most Popular</span>
+              <span className="absolute -top-1.5 right-32 badge badge-xs badge-warning bg-[#FEF3C6] text-[#1F2937]">
+                Most Popular
+              </span>
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold">Pro</h2>
                 <p>Best for professionals</p>
-                <p ><span className="text-2xl font-bold">$29</span>/month</p>
+                <p>
+                  <span className="text-2xl font-bold">$29</span>/month
+                </p>
               </div>
               <ul className="mt-6 flex flex-col flex-1 gap-2 text-xs">
                 <li>
@@ -210,20 +216,22 @@ const PricingSect = () => {
                   </svg>
                   <span>Advanced analytics</span>
                 </li>
-                
               </ul>
               <div className="mt-6">
-                <button className="btn btn-outline btn-primary text-black font-bold rounded-full  w-full bg-white hover:bg-gray-200">Start Pro Trial</button>
+                <button className="btn btn-outline btn-primary text-black font-bold rounded-full  w-full bg-white hover:bg-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                  Start Pro Trial
+                </button>
               </div>
             </div>
           </div>
-          <div className="card  bg-base-100 shadow-lg">
+          <div className="card  bg-base-100 shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-200">
             <div className="card-body">
-              
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold">Enterprise</h2>
                 <p>For teams and businesses</p>
-                <p ><span className="text-2xl font-bold">$99</span>/month</p>
+                <p>
+                  <span className="text-2xl font-bold">$99</span>/month
+                </p>
               </div>
               <ul className="mt-6 flex flex-col flex-1 gap-2 text-xs">
                 <li>
@@ -328,11 +336,11 @@ const PricingSect = () => {
                   </svg>
                   <span>Custom branding</span>
                 </li>
-              
-                
               </ul>
               <div className="mt-6">
-                <button className="btn btn-primary btn-block rounded-full">Contact Sales</button>
+                <button className="btn btn-primary btn-block rounded-full hover:shadow-2xl transition-shadow duration-300">
+                  Contact Sales
+                </button>
               </div>
             </div>
           </div>

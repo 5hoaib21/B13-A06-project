@@ -23,15 +23,17 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="btn btn-primary rounded-full">
+            <button className="btn btn-primary rounded-full hover:translate-y-1 transition-transform duration-300">
               {" "}
-              Explore Products
+        
+                Explore Products
+              
             </button>
             <button className="btn btn-outline btn-primary rounded-full group flex items-center gap-2">
-              <span className="group-hover:translate-x-1 transition">
+              <span className="group-hover:translate-x-1 transition-transform duration-300">
                 <CiPlay1 />
               </span>
-              Explore Products
+              Watch Demo
             </button>
           </div>
         </div>
